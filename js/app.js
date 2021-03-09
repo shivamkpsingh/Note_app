@@ -1,4 +1,4 @@
-// console.log('this is my first website using javascript')
+
 showNote();
 
 // function to add note
@@ -26,7 +26,6 @@ addBtn.addEventListener('click', function (e) {
    localStorage.setItem('notes', JSON.stringify(notesObj));
    addTxt.value = " ";
    addTitle.value = " ";
-   // console.log(notesObj);
    showNote();
 })
 
@@ -65,7 +64,6 @@ function showNote() {
 // function to delete a notes
 function deleteNote(index) {
 
-   // console.log('i am deleting',index)
 
    let notes = localStorage.getItem("notes");
    if (notes == null) {
@@ -87,11 +85,9 @@ function deleteNote(index) {
 let search = document.getElementById('searchTxt');
 search.addEventListener("input", function () {
    let inputVal = search.value.toLowerCase();
-   // console.log('input is fired', inputVal);
    let noteCard = document.getElementsByClassName('noteCard');
    Array.from(noteCard).forEach(function (element) {
       let cardTxt = element.getElementsByTagName('p')[0].innerText
-      // console.log(cardTxt)
       if (cardTxt.includes(inputVal)) {
          element.style.display = "block";
       }
