@@ -27,7 +27,8 @@
 
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
@@ -37,12 +38,15 @@
         <h3>Welcome to my magic notes</h3>
         <div class="card">
             <div class="card-body">
+                <div class="mb-3">
+                    <h5 class="card-title">Add title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title"placeholder="Enter title">
+                </div>
                 <h5 class="card-title">Add a note</h5>
                 <div class="mb-3">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
                 </div>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <p class="card-text"></p>
                 <button class="btn btn-primary" id="addBtn">Add note</button>
             </div>
         </div>
